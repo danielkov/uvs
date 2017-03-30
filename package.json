@@ -1,6 +1,6 @@
 {
   "name": "uvs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Faster WebSocket Client and Server implementation.",
   "main": "index.js",
   "scripts": {

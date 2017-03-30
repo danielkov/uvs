@@ -167,5 +167,6 @@ class Uvs extends Evs {
 
   send (name, data) {
     this.socket.send(JSON.stringify({name: name, message: data}));
+		return this;
   }
 }
