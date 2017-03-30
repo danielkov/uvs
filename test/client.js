@@ -142,10 +142,14 @@ class Evs {
 class Uvs extends Evs {
   constructor (...args) {
     super(...args);
+		let url
     if (!args[0].startsWith('ws://')) {
-      args[0] = `ws://${args[0]}`;
+      url = `ws://${args[0]}`;
     }
-    this.socket = new WebSocket(args[0])
+		if (args[0] === undefined || typeof args[0] !== 'string') {
+			url = document.location.origin.replace(/^(http)|(https)+/, 'ws')
+		}
+    this.socket = new WebSocket(url)
     this.socket.onmessage = e => {
       let data = JSON.parse(e.data)
       this.trigger(data.name, data.message);

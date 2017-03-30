@@ -4,7 +4,7 @@ const result = document.querySelector('#result')
 const form = document.querySelector('#form')
 const text = document.querySelector('#text')
 
-const uvs = new Uvs('192.168.0.16:3000')
+const uvs = new Uvs('localhost:3000')
 
 uvs.on('open', (ws) => {
   log('Connection opened.')
