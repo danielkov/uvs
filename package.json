@@ -1,6 +1,6 @@
 {
   "name": "uvs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Faster WebSocket Client and Server implementation.",
   "main": "index.js",
   "scripts": {
@@ -28,8 +28,6 @@
   },
   "homepage": "https://github.com/danielkov/uvs#readme",
   "dependencies": {
-    "babel-preset-es2015": "^6.22.0",
-    "babelify": "^7.3.0",
     "evs": "^1.0.1",
     "uws": "^0.12.0"
   },
